@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Space Tetris</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body id="spacy-background">
+    <script src="scripts/animation.js"></script>
+    <div id="scoreboard">
+      <h1>Scoreboard</h1>
+      <h2>Score: <span id="score">0</span></h2>
+      <h2>High Score: <span id="highScore">0</span></h2>
+      <h2>Highest Level: <span id="highestLevel">1</span></h2>
+      <h2>Level: <span id="level">1</span></h2>
+      <h2>Time: <span id="time">0.0</span></h2>
+      <h2>Longest Time: <span id="longestTime">0.0</span></h2>
+      <h2>Lines: <span id="lines">0</span></h2>
+      <h2>Most Lines Cleared: <span id="mostLines">0</span></h2>
+    </div>
+    <main id="game-container">
+      <h1>Space Tetris</h1>
+      <script type="module" src="scripts/main.js" defer></script>
+    </main>
+    <div id="controls">
+      <h1>Controls</h1>
+      <li>Left Arrow: Move Left</li>
+      <li>Right Arrow: Move Right</li>
+      <li>Down Arrow: Move Down</li>
+      <li>Up Arrow: Rotate</li>
+      <li>Space: Drop Piece</li>
+      <li>R: Restart Game</li>
+      <li>P: Pause Game</li>
+      <li>Esc: Quit Game</li>
+    </div>
+  </body>
+</html>
